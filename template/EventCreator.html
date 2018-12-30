@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeagleBone Event Creator</title>
+    <link rel="stylesheet" href="../static/EventCreator.css"/>
+     <script src="../static/EventCreator.js"></script>
+  </head>
+
+  <body>
+     <div class="transparent">
+      <h1 class="center2">Create A New Recording Trigger</h1>
+
+        <table class="center">
+          <tr>
+            <td>
+              <label for="eventName">Name of new trigger:</label>
+            </td>
+            <td>
+              <input type="text" id="eventName" name="eventName" required minlength="1" maxlength="50" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eventTime">Time (hour):</label>
+            </td>
+            <td>
+              <input type="number" id="eventHours" name="eventHours" required min="0" max="23" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eventTime">Time (minutes):</label>
+            </td>
+            <td>
+              <input type="number" id="eventMinutes" name="eventMinutes" required min="0" max="59" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eventDate">Date:</label>
+            </td>
+            <td>
+              <input type="date" id="eventDate" name="eventDate" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eventFrequency">Frequency (kHz):</label>
+        </td>
+             <td>
+              <input type="text" id="eventFrequency" name="eventFrequency" required minlength="1" maxlength="50" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="modulation">Modulation: </label>
+            </td>
+            <td>
+              <select>
+                <option value="am">AM</option>
+                <option value="lsb">LSB</option>
+                 <option value="usb">USB</option>
+                <option value="cw">CW</option>
+                <option value="nbfm">NBFM</option>
+                <option value="iq">IQ</option>
+              </select>
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <td>
+              <label for="eventTime">Duration of recording (minutes):</label>
+            </td>
+            <td>
+              <input type="number" id="eventDurationMinutes" name="eventDurationMinutes" required min="0" max="59" size="30">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eventTime">Duration of recording (seconds):</label>
+            </td>
+            <td>
+              <input type="number" id="eventDurationSeconds" name="eventDurationSeconds" required min="0" max="59" size="30">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="eventRepeat">Repeat (weekly):</label>
+            </td>
+            <td>
+              <input type="checkbox" id="eventRepeat" name="eventRepeat" size="30">
+            </td>
+          </tr>
+        </table>
+
+        <br>
+
+        <button type="button" id = "createEvent" class="center">Create Event</button>
+
+
+  </body>
+</html>
