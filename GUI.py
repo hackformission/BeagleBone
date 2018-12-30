@@ -1,6 +1,7 @@
 import tornado.ioloop
 import tornado.web
 import os.path
+import json
 
 from insertSchedule import insertSchedules
 
@@ -10,7 +11,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.render("EventCreator.html")
 
     def post(self):
-        data = self.request.body
+        data = json.loads(self.request.body)
         print data
         insertSchedules(data)
 
