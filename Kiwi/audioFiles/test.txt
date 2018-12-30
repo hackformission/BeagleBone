@@ -1,0 +1,1 @@
+d.test = struct('coord', [12.171120,-68.282210], 'host', 'hat2018.twrmon.net', 'port', 8075);
