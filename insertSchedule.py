@@ -15,12 +15,11 @@ def insertSchedules(data):
 
         if connection.is_connected():
             cursor = connection.cursor()
-
             dataValues = (data["timestamp"], data["filename"], data["frequency"], data["hostname"], data["port"], data["band"], data["duration"])
-            insert_stmp = "INSERT INTO schedule (timestamp, filename, frequency, hostname, port, band, duration) VALUES (%s, %s, %s, %s, %s, %s)"
+            insert_stmp = "INSERT INTO schedule (timestamp, filename, frequency, hostname, port, band, duration) VALUES (%s, %s, %s, %s, %s, %s, %s)"
 
             cursor.execute(insert_stmp, dataValues)
-
+            connection.commit()
         else:
             raise RuntimeError("Could not connect to database")
     except Error as e:
