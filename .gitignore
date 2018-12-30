@@ -1,8 +1,4 @@
 .DS_Store
 .idea/
 *.pyc
-<<<<<<< HEAD
-Kiwi/audioFiles
-=======
 Kiwi/audioFiles/*.wav
->>>>>>> ecb071bf4262ca1579f30dd018991257443a52b7
