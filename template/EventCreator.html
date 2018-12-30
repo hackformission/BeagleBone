@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" >
     <title>BeagleBone Event Creator</title>
     <link rel="stylesheet" href="../static/EventCreator.css"/>
      <script src="../static/EventCreator.js"></script>
@@ -9,7 +9,7 @@
 
   <body>
      <div class="transparent">
-      <h1 class="center2">Create A New Recording Trigger</h1>
+      <h1 class="center2">Create a New Recording Trigger</h1>
 
         <table class="center">
           <tr>
@@ -57,7 +57,7 @@
               <label for="modulation">Modulation: </label>
             </td>
             <td>
-              <select>
+              <select id="eventBand">
                 <option value="am">AM</option>
                 <option value="lsb">LSB</option>
                  <option value="usb">USB</option>
@@ -65,11 +65,20 @@
                 <option value="nbfm">NBFM</option>
                 <option value="iq">IQ</option>
               </select>
-
             </td>
-
           </tr>
-
+          <tr>
+            <td>
+              <label for="ipAddr">IP address/ host name: </label>
+            </td>
+            <td><input type="text" id="ipAddr" name="ipAddr" required min minlength="1" maxlength="50" size="30"></td>
+          </tr>
+           <tr>
+            <td>
+              <label for="eventPort">Port: </label>
+            </td>
+            <td><input type="text" id="eventPort" name="eventPort" required min minlength="1" maxlength="50" size="30"></td>
+          </tr>
 
           <tr>
             <td>
@@ -85,15 +94,6 @@
             </td>
             <td>
               <input type="number" id="eventDurationSeconds" name="eventDurationSeconds" required min="0" max="59" size="30">
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <label for="eventRepeat">Repeat (weekly):</label>
-            </td>
-            <td>
-              <input type="checkbox" id="eventRepeat" name="eventRepeat" size="30">
             </td>
           </tr>
         </table>

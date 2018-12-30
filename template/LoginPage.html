@@ -5,9 +5,24 @@
     <title>BeagleBone Login</title>
     <link rel="stylesheet" href="static/LoginPage.css"/>
     <link rel="stylesheet" href="static/LoginPage.js"/>
+    <link rel="stylesheet" type="text/css" href="../static/loginPage.css">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <body>
-    <<button type="button" id = "loginButton">Log Me In!</button>
+    <div class="center">
+      <div class="loginBox">
+          <form action="/action_page.php">
+            <div class="loginBoxCenter">
+                Username: <input class = "loginInput" type="text" name="username" placeholder="username"><br>
+            </div>
+            <div class="loginBoxCenter">
+                Password: <input class="loginInput" type="password" name="lastName" placeholder="password"><br>
+            </div>
+            <button class = "loginBtn" type="submit" id = "loginButton">Login</button>
+          </form>
+      </div>
+    </div>
   </body>
 </html>
