@@ -14,8 +14,8 @@ submitButton.addEventListener("click", function () {
       "frequency" : document.getElementById("eventFrequency").value,
       "hostname" : document.getElementById("eventHost").value,
       "port" : document.getElementById("eventPort").value,
-	  "band" : document.getElementById("eventBand").value,
-	  "duration" : document.getElementById("eventDurationMinutes") + ":" + document.getElementById("eventDurationSeconds")
+      "band" : document.getElementById("eventBand").value,
+      "duration" : document.getElementById("eventDurationMinutes") + ":" + document.getElementById("eventDurationSeconds")
     };
 	console.log(eventData);
 	
