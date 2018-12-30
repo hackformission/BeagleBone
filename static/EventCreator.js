@@ -15,7 +15,7 @@ submitButton.addEventListener("click", function () {
       "hostname" : document.getElementById("ipAddr").value,
       "port" : document.getElementById("eventPort").value,
       "band" : document.getElementById("eventBand").value,
-      "duration" : document.getElementById("eventDurationMinutes") + ":" + document.getElementById("eventDurationSeconds")
+      "duration" : document.getElementById("eventDurationMinutes").value + ":" + document.getElementById("eventDurationSeconds").value
     };
 	console.log(eventData);
 	
