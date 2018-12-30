@@ -10,7 +10,7 @@ submitButton.addEventListener("click", function () {
 
   var eventData = {
       "filename" : document.getElementById("eventName").value,
-      "timestamp" : document.getElementById("eventDate").split("/")[2] + "/" + document.getElementById("eventDate").split("/")[0] + "/" + document.getElementById("eventDate").split("/")[1] + " " + document.getElementById("eventHours") + document.getElementById("eventMinutes"),
+      "timestamp" : document.getElementById("eventDate").value.split("/")[2] + "/" + document.getElementById("eventDate").value.split("/")[0] + "/" + document.getElementById("eventDate").value.split("/")[1] + " " + document.getElementById("eventHours") + document.getElementById("eventMinutes"),
       "frequency" : document.getElementById("eventFrequency").value,
       "hostname" : document.getElementById("eventHost").value,
       "port" : document.getElementById("eventPort").value,
