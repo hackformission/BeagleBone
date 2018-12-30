@@ -1,0 +1,45 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+.loginBoxCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 30%;
+    height: 30%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+  
+body {
+    background-image: url("https://www.twr.org/images/r/twr-hero-japanese-man-web-optimized/c1680x900g0-0-1680-897/twr-hero-japanese-man-web-optimized.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginInput {
+    margin: 5px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    line-height: 28px;
+}
+
+.loginBtn {
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #008CBA;
+}
